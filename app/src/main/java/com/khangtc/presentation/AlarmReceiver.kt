@@ -7,7 +7,6 @@ import com.khangtc.helper.NotificationHelper
 
 class AlarmReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent?) {
-        NotificationHelper.createNotificationChannel(context)
         NotificationHelper.showNotification(context)
     }
 }
